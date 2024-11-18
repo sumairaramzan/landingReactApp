@@ -1,0 +1,110 @@
+/* src/components/card.css */
+
+.card-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 220px;
+  height: 350px; /* Increased height for button space */
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  transition: transform 0.2s; /* Add hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.card h4, .card h3, .card p {
+  margin: 5px 0;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto; /* Align button to the bottom of card */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* src/components/cart.css */
+
+.cart {
+  padding: 20px;
+}
+
+.cart h2 {
+  text-align: center;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px; /* Fixed width for cart items */
+}
+
+.cart-item img {
+  max-width: 50px; /* Smaller image size for cart */
+  margin-right: 10px;
+}
+.cart-count {
+  position: absolute; /* Position relative to the parent */
+  top: -5px; /* Adjust based on your design */
+  right: -10px; /* Adjust based on your design */
+  background-color: red; /* Background color */
+  color: white; /* Text color */
+  border-radius: 50%; /* Round shape */
+  padding: 5px 8px; /* Padding for appearance */
+  font-size: 12px; /* Font size */
+}
+
